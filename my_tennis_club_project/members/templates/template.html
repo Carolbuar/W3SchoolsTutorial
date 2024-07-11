@@ -1,0 +1,14 @@
+{% extends "master.html" %}
+
+{% block content %}
+  <ul>
+    {% for x in mymembers %}
+      <li>{{ x.firstname }}</li>
+    {% endfor %}
+  </ul>
+
+  <p>In views.py you can see what the fruits variable looks like.</p>
+{% endblock %}
+
+{% include 'footer.html' with myname="Caroline" %}
+
